@@ -25,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //데이터
+        datas.add("aaa");
+        datas.add("bbb");
+        datas.add("ccc");
+        datas.add("ddd");
+
+        recyclerView= findViewById(R.id.recyclerview);
+        adapter= new MainAdapter(datas,this);
+        recyclerView.setAdapter(adapter);
+
 
 
 
